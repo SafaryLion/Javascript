@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    
+    <div id="calculadora">
+
+        <form action="#">
+
+            <div id="pantalla">
+              <p id="texto"></p>
+            </div>
+
+            <div id="teclado">
+
+                <input type="button" id="Reset" class="largo" value="Resetear" onclick="resetear()"/>
+
+                <br><br>
+
+                <input type="button" value="7" onclick="numero('7')"/>
+                <input type="button" value="8" onclick="numero('8')"/>
+                <input type="button" value="9" onclick="numero('9')"/>
+                <input type="button" class="operacion" value="/" onclick="operar('/')"/>
+                <input type="button" class="operacion" value="%" onclick="operar('%')"/>
+
+                <br><br>
+
+                <input type="button" value="4" onclick="numero('4')"/>
+                <input type="button" value="5" onclick="numero('5')"/>
+                <input type="button" value="6" onclick="numero('6')"/>
+                <input type="button" class="operacion" value="*" onclick="operar('*')"/>   <input type="button" class="operacion" value="+" onclick="operar('+')"/>
+
+
+                <br><br>
+
+                <input type="button" value="1" onclick="numero('1')"/>
+                <input type="button" value="2" onclick="numero('2')"/>
+                <input type="button" value="3" onclick="numero('3')"/>
+                <input type="button" class="operacion" value="-" onclick="operar('-')"/>
+
+                <input type="button" id="result" class="operacion" value="=" onclick="igualar()"/>
+                <br><br>
+
+                <input type="button" id="cero" value="0" />
+                <input type="button" id="coma" class="operacion" value="." onclick="numero('.')"/>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
